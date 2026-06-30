@@ -1,0 +1,316 @@
+<html>      
+    <head>
+  <title> Portfolio </title>
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <style>
+/* ==================================
+   Global
+================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ==================================
+   about-me Section
+================================== */
+
+.about-me {
+
+    background: #0d6efd;
+
+    color: white;
+
+    padding: 100px 20px;
+
+    text-align: center;
+}
+
+/* ==================================
+   Headings
+================================== */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #0d6efd;
+}
+
+/* ==================================
+   Skills Grid
+================================== */
+
+.skills-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,
+        minmax(200px, 1fr));
+
+    gap: 20px;
+}
+
+.skill-card {
+
+    background: #0d6efd;
+
+    color: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+/* ==================================
+   Projects Grid
+================================== */
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,
+        minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+.project-card {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 10px
+        rgba(0,0,0,0.1);
+
+    text-align: center;
+}
+
+/* ==================================
+   Contact Form
+================================== */
+
+.contact-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    max-width: 600px;
+
+    margin: auto;
+}
+
+/* ==================================
+   Footer
+================================== */
+
+footer {
+
+    background: #212529;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+  </style>
+    </head>
+    <body>
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"> 
+                     <!-- <img src="./assets/image.png" alt="" width="30" height="24"/>-->
+                      My Portfolio</a> 
+                
+        <div class="collapse navbar-collapse"
+            id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#home">
+                       Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#about">
+                       About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#skills">
+                       Skills
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#projects">
+                       Projects
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#contact">
+                       Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+            </div>
+        </nav>
+
+
+<section class="about-me" id="home" >
+
+    <div class="container text-center">
+
+        <h1>
+            Hi, I'm Deepak Kumar
+        </h1>
+
+        <h3>
+            Full Stack Developer
+        </h3>
+
+        <p>
+            HTML, CSS, Bootstrap,
+            React & Node.js
+        </p>
+
+        <button
+            class="btn btn-primary btn-lg">
+
+            Hire Me
+
+        </button>
+
+    </div>
+
+</section>
+
+<section class="container py-5" id = "about">
+    <h2 class="section-title">
+        About Me
+    </h2>
+
+    <p class="text-center">
+
+        I am a passionate Full Stack
+        Developer with experience in
+        React, Node.js and MongoDB.
+
+    </p>
+</section>
+
+
+<section class="container py-5" id = "skills">
+
+    <h2 class="section-title">
+        Skills
+    </h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Bootstrap</div>
+        <div class="skill-card">ReactJS</div>
+        <div class="skill-card">NodeJS</div>
+
+    </div>
+
+</section>
+
+
+
+<section class="container py-5" id="projects">
+
+    <h2 class="section-title">
+        Projects
+    </h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            E-Commerce Website
+        </div>
+
+        <div class="project-card">
+            Portfolio Website
+        </div>
+
+        <div class="project-card">
+            Student Management System
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="container py-5" id="contact">
+
+    <h2 class="section-title">
+        Contact Me
+    </h2>
+
+    <form class="contact-form">
+
+        <input
+            type="text"
+            placeholder="Name"
+            class="form-control">
+
+        <input
+            type="email"
+            placeholder="Email"
+            class="form-control">
+
+        <textarea
+            rows="5"
+            class="form-control"
+            placeholder="Message">
+        </textarea>
+
+        <button
+            class="btn btn-success">
+
+            Send Message
+
+        </button>
+
+    </form>
+
+</section>
+
+    </body>
+</html>
